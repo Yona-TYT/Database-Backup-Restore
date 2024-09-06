@@ -43,10 +43,12 @@ jobs:
         run: chmod +x ./gradlew
 
 
+      # Clean test
+      - name: Run gradle clan
+        run: ./gradlew cleanBuildCache
 
       # Run Tests Build
       - name: Run gradle tests
-        run: ./gradlew cleanBuildCache
         run: ./gradlew test --scan --warning-mode all
 
       # Run Build Project
