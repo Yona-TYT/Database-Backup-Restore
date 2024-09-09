@@ -54,7 +54,7 @@ jobs:
 
       # Show dir 
       - name: Test Yona
-        run: ls "/home/runner/work/code-scanner/code-scanner/"
+        run: ls "/home/runner/work/"
         
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
@@ -85,7 +85,7 @@ jobs:
 
       # Show dir 
       - name: Test Yona
-        run: ls "/home/runner/work/code-scanner/code-scanner/"
+        run: ls "/home/runner/work/"
 
       # Create Bundle AAB Release
       # Noted for main module build [main_project_module]:bundleRelease
