@@ -54,7 +54,7 @@ jobs:
 
       # Show dir 
       - name: Test Yona
-        run: ls "/home/runner/work/Database-Backup-Restore/"
+        run: ls "/home/runner/work/Database-Backup-Restore/Database-Backup-Restore/"
         
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
@@ -65,12 +65,12 @@ jobs:
 
       # Run Build Project
       - name: Build gradle project
-        #run: ./gradlew  && echo "OK" || cat "/home/runner/work/code-scanner/code-scanner/app/build/outputs/mapping/fossRelease/missing_rules.txt"
+        #run: ./gradlew  && echo "OK" || cat "/home/runner/work/Database-Backup-Restore/Database-Backup-Restore/app/build/outputs/mapping/fossRelease/missing_rules.txt"
         run: ./gradlew build  --scan
 
       # Create APK Debug
      # - name: Build apk debug project (APK) - ${{ env.main_project_module }} module
-       # run: ./gradlew assembleDebug && echo "OK" || cat "/home/runner/work/code-scanner/code-scanner/app/build/outputs/mapping/fossRelease/missing_rules.txt"
+       # run: ./gradlew assembleDebug && echo "OK" || cat "/home/runner/work/Database-Backup-Restore/Database-Backup-Restore/app/build/outputs/mapping/fossRelease/missing_rules.txt"
        # run: ./gradlew assembleDebug --scan --warning-mode=all 
 
       # Create APK Release
@@ -79,7 +79,7 @@ jobs:
           RELEASE_KEYSTORE_PASSWORD: ${{ secrets.RELEASE_KEYSTORE_PASSWORD }}
           RELEASE_KEYSTORE_ALIAS: ${{ secrets.RELEASE_KEYSTORE_ALIAS }}
           RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
-        run: ./gradlew assemble && echo "OK" || cat "/home/runner/work/code-scanner/code-scanner/app/build/outputs/mapping/fossRelease/missing_rules.txt"
+        run: ./gradlew assemble && echo "OK" || cat "/home/runner/work/Database-Backup-Restore/Database-Backup-Restore/app/build/outputs/mapping/fossRelease/missing_rules.txt"
        # run: ./gradlew assemble --warning-mode 
 
 
