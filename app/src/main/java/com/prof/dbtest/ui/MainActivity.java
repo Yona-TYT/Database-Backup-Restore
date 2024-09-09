@@ -22,7 +22,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Environment;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
