@@ -85,7 +85,7 @@ jobs:
 
       # Show dir 
       - name: Test Yona
-        run: ls "/home/runner/work/"
+        run: ls "/home/runner/work/Database-Backup-Restore/"
 
       # Create Bundle AAB Release
       # Noted for main module build [main_project_module]:bundleRelease
