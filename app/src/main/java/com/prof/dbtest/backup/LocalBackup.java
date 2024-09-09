@@ -18,7 +18,7 @@
 package com.prof.dbtest.backup;
 
 import android.os.Environment;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.text.InputType;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
