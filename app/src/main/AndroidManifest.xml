@@ -11,11 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".coursedetail_activity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".courselist_activity" android:screenOrientation="portrait"/>
-        <activity android:name=".showcontact_activity" android:screenOrientation="portrait"/>
-        <activity android:name=".newcontact_activity" android:screenOrientation="portrait"/>
-        <activity android:name=".login_activity" android:screenOrientation="portrait">
+        <activity android:name=".coursedetail_activity" android:screenOrientation="portrait" android:exported="true"></activity>
+        <activity android:name=".courselist_activity" android:screenOrientation="portrait" android:exported="true"/>
+        <activity android:name=".showcontact_activity" android:screenOrientation="portrait" android:exported="true"/>
+        <activity android:name=".newcontact_activity" android:screenOrientation="portrait" android:exported="true"/>
+        <activity android:name=".login_activity" android:screenOrientation="portrait" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
